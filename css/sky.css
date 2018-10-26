@@ -1,0 +1,299 @@
+*{
+  margin: 0px; box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+body{
+  max-width: 1349px; margin: 0 auto;
+}
+/*ENCABEZADO*/
+header{
+  width: 100%; display: flex; flex-direction: column;
+  background-image: url(..//img/gavi.png);
+  background-size: cover;
+}
+/*LOGO Y MENU*/
+.top-header{
+  display: flex; flex-direction: row; flex-wrap: wrap;
+  justify-content: space-between; padding: 20px 0px;
+  width: 100%; max-width: 1200px; margin: auto;
+  border-bottom: 2px solid #252662;
+}
+.logo{
+  margin: auto;
+}
+.logo>a>img{
+  transition: 1.5s ease-out;
+}
+.logo>a>img:hover{
+  transform: rotate(180deg);
+}
+.menu-principal{
+  display: flex; flex-direction: row; flex-wrap: wrap;
+  width: 100%; max-width: 375px; margin:auto;
+  justify-content: space-between; align-items: center;
+}
+.menu-principal>a{
+  text-decoration: none; font-size: 20px;
+  font-family:'PT Sans', sans-serif; color: black;
+  padding: 10px 10px;
+
+}
+.menu-principal>a:hover{
+  font-weight: 700; color: #fafafa;
+  background-color: rgba(24, 25, 102, 0.6);
+}
+@media all and (min-width:498px) {
+  .logo{
+    margin: 0px;
+  }
+  .menu-principal{
+    margin: 0px;
+  }
+}
+/*FIN LOGO Y MENU*/
+
+/*BOTTOM HEADER*/
+.bottom-header{
+  width: 100%; display: flex; flex-direction: column;
+  align-items: center; padding: 30px 0px;
+}
+.logo-grande{
+
+}
+.logo-grande>img{
+  width: 100%;
+}
+.botones-header{
+  margin: 20px auto; display: flex; flex-direction:row;
+  flex-wrap: wrap; width: 100%; justify-content: center;
+}
+.botones-header>a{
+  text-decoration: none; font-family:'PT Sans', sans-serif;
+  border: 2px solid #252662; font-weight: 700;
+  color: #fafafa; padding: 10px 20px; font-size: 22px;
+  margin: 5px 10px;
+}
+
+.botones-header>a:hover{
+  background-color: rgba(208, 208, 216, 0.4);
+  color: #000000;
+}
+/* FIN BOTTOM HEADER*/
+
+/* BIENVENIDA*/
+.bienvenida{
+  width: 100%; padding: 10px 5px;
+  display: flex; flex-direction: column;
+
+}
+.entrada{
+ font-size: 18px; text-align: center;
+ width: 100%; margin: 20px 0px;
+ line-height: 1.5em; justify-content:space-around;
+ display: flex;flex-direction: row; flex-wrap: wrap;
+ border-bottom:2px solid #252662;
+}
+.entrada>p{
+  width: 100%; max-width: 330px; padding-bottom: 30px;
+}
+.banner-hover{
+  display: flex; flex-direction: row;flex-wrap: wrap;
+  justify-content: space-around; margin: 15px 0px;
+}
+.caja{
+  width: 100%; max-width: 300px;
+  display: flex; flex-direction: column;
+  align-items: center; margin-top: 15px;
+  padding: 10px 0px;
+  background-color: #cecedc;
+  border: 2px solid #252662;
+
+}
+.caja>img{
+  width: 230px;
+}
+
+.caja>h4{
+  text-align: center; font-size: 18px;
+  padding: 15px 15px;
+}
+.caja:hover{
+  transform: scale(1.15);
+}
+.caja>h4>a{
+  text-decoration: none; color:#252662;
+}
+/*FIN BIENVENIDA*/
+
+/*DESTINOS*/
+.destinos{
+  margin: 30px 10px; display: flex; flex-direction: column;
+  justify-content: center; text-align: center;
+}
+.tituloseccion{
+    padding-bottom: 60px; font-weight: 700;
+    color: #252662; font-size: 24px;
+}
+/*FIN DESTINO*/
+
+/*SERVICIOS*/
+.servicios{
+  padding:20px 10px; display: flex; flex-direction: column;
+  align-items: center; margin-bottom: 30px;
+}
+.servicios>div{
+  margin: 20px 0px; line-height: 1.5em;
+  transition: 1.0s ease-out; min-width: 300px;
+}
+.Cafeteria{
+  background-image: url(..//img/caf1.png);
+  background-size: cover; height: 290px; width: 66%;
+}
+.Cafeteria>h3, p{
+  width: 100%; max-width: 320px; text-align: center;
+  margin-left: 30px; padding-top: 30px;
+}
+.Desplazamiento{
+  background-image: url(..//img/maletas.png);
+  background-size: cover; height: 290px; width: 66%;
+
+}
+.Desplazamiento:hover{
+  filter: saturate(1.8)!Important;
+}
+.Skyingaroo{
+  background-image: url(..//img/nino.png);
+  background-size: cover; height: 290px; width: 66%;
+}
+
+.SkyingPremium{
+  background-image: url(..//img/vip.png);
+  background-size: cover; height: 290px; width: 66%;
+}
+.SkyingPremium>h3, p{
+  width: 100%; max-width: 320px; text-align: center;
+  margin-left: 30px; padding-top: 30px;
+}
+.SkyingApp{
+  background-image: url(..//img/tele.png);
+  background-size: cover; height: 290px; width: 66%;
+}
+#misma{
+  display: flex; flex-flow: column;
+  align-items: flex-end;
+
+}
+#misma>h3, p{
+  width: 100%; max-width: 320px; text-align: center;
+  margin-right:30px; padding-top: 30px;
+}
+.nombre{
+  padding-bottom: 20px; font-weight: 700;
+  color: #252662; font-size: 24px;
+}
+.servicios>div:hover{
+  filter: saturate(3.2);
+}
+.servicios.div.h3{
+  font-size: 26px;
+}
+@media all and (max-width:1000px) {
+  .servicios>div{
+    display: flex; flex-direction: column;
+    flex-wrap: wrap; justify-content: center;
+  }
+  .servicios>div>h3, p{
+    margin:0px auto;
+  }
+  .nombre{
+    text-align: center;
+  }
+}
+/*FIN SERVICIOS*/
+
+/*CONTACTO*/
+.contacto{
+  width: 100%; display: flex;flex-direction: row;
+  justify-content: space-between; height: auto; background-color: #243f4d;
+}
+.mapa{
+  width: 35%;
+}
+.caja-form{
+  width: 65%;
+}
+
+.caja-form>h2{
+  margin: 10px 0px;text-align: center;
+  font-size: 28px;
+
+}
+.gen{
+  display: flex; flex-direction: row; flex-wrap: wrap;
+  justify-content: space-around; margin: auto; width: 90%;
+  background-color: rgba(96, 152, 186, 0.5);
+  margin-bottom: 20px;
+}
+.cax{
+  display: flex; flex-direction: row; margin: 30px 0px;
+}
+.datos .cax>h3, a{
+  padding-left: 10px; text-decoration: none;
+  color:#000000; font-size: 24px; font-weight: 700;
+  padding-top: 5px;
+}
+.social .cax>a{
+  padding-left: 10px; font-size: 22px; padding-top: 5px;
+}
+.social .cax:hover{
+   transform: scale(1.25);
+}
+.pie{
+  width: 100%; background-color: #012c46;
+  text-align: center; padding: 30px 0px;
+  border-bottom: 2px solid #000000;
+}
+.pie>p{
+  width: 100%;display: inline; font-weight: 700;
+
+}
+@media all and (max-width:1160px){
+  .contacto{
+    display: flex; flex-direction: column;
+    flex-wrap: wrap; max-width: 1349px; align-items: center;
+  }
+  .mapa{
+    width: 80%;
+  }
+  .caja-form{
+    width: 80%; display: flex; flex-direction: column;
+    flex-wrap: wrap; justify-content: center;
+  }
+  .gen{
+    margin-bottom: 20px;
+  }
+  .mapa{
+    margin-top: 20px;
+  }
+}
+@media all and (max-width:930px){
+  .gen{
+    display: flex; flex-direction: column;
+    align-items: flex-start; min-width: 257px; margin-bottom: 20px;
+  }
+  .social{
+    margin: auto;
+  }
+  .datos{
+    margin:auto;
+  }
+  .mapa{
+    margin-top: 20px;
+  }
+}
+@media all and (max-width:416px){
+  .cax{
+    display: flex; flex-direction: column;
+    flex-wrap: wrap; align-items: center;
+  }
+}
